@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./op.jpg">
+    <title>Testing Form</title>
+</head>
+
+<body class="bg-zinc-800">
+    <h1 class="text-4xl font-semibold text-indigo-500 text-center mt-10">Contact Form</h1>
+    <form action="/submit" class="mt-10 flex flex-col w-60 m-auto justify-center " method="post" enctype="multipart/form-data">
+        <label class="text-indigo-500 text-xl" for="name">Name:</label>
+        <input type="text" id="name" class="bg-zinc-600 border-[1px] border-black outline-none" name="name" required><br><br>
+
+        <label class="text-indigo-500 text-xl" for="dob">Date of Birth:</label>
+        <input type="date" id="dob" class="bg-zinc-600 border-[1px] border-black outline-none" name="dob" required><br><br>
+
+        <label class="text-indigo-500 text-xl" for="contact">Contact:</label>
+        <input type="tel" id="contact" class="bg-zinc-600 border-[1px] border-black outline-none" name="contact" required><br><br>
+
+        <label class="text-indigo-500 text-xl" for="address">Address:</label>
+        <textarea id="address" class="bg-zinc-600 border-[1px] border-black outline-none" name="address" required></textarea><br><br>
+
+        <label class="text-indigo-500 text-xl" for="category">Select Option:</label>
+        <select id="category" class="bg-zinc-600 border-[1px] border-black outline-none" name="category" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select><br><br>
+
+        <label class="text-indigo-500 text-xl" for="image">Image:</label>
+        <input class="bg-zinc-600 border-[1px] border-black outline-none" type="file" id="image" name="image" accept="image/*"><br><br>
+
+        <input class="hover:cursor-pointer hover:bg-black hover:text-white border-[1px] px-2 text-lg bg-zinc-700 text-indigo-500 border-indigo-500 font-semibold" type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
